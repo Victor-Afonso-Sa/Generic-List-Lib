@@ -8,9 +8,9 @@ Biblioteca para criação de CRUD automatico usando angular.
 > ## `npm i generic-list` 
 > - https://www.npmjs.com/package/generic-list/
 ## Necessário instalar também bootstrap e NGX bootstrap para estilização basica:
-> ### `npm i bootstrap`
+> ## `npm i bootstrap`
 > - https://www.npmjs.com/package/bootstrap
-> ### npm i ngx-bootstrap
+> ## `npm i ngx-bootstrap`
 > - https://www.npmjs.com/package/ngx-bootstrap
 ## Importar o CSS:
 >  ![image](https://user-images.githubusercontent.com/71721377/95256200-e29a9f00-07f8-11eb-9cd3-d4d83c2ac8d3.png) ( angular.json )
