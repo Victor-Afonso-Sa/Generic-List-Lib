@@ -6,12 +6,16 @@ Sumario:
  1. [Iniciando](#inicio)
  2. [Configurando](#config)
  3. [CSS customizado](#css)
- 4. [Extrax](#extras)
+ 4. [Extras](#extras)
 
 *******
 
 **A partir de um Array de JSON.**
+
+
 <div id='inicio'/>
+
+
 ## Iniciando:
 ### Importando via NPM:
 > ## `npm i generic-list` 
@@ -68,7 +72,13 @@ Sumario:
 > ![image](https://user-images.githubusercontent.com/71721377/95110369-47c89480-0714-11eb-8afe-07bdabdb4486.png)
 ### Depois:
 > ![image](https://user-images.githubusercontent.com/71721377/95110471-70e92500-0714-11eb-8a72-8282fdb98874.png)
+
+
+
 <div id='config'/>
+
+
+
 ## Configuração Formulario e tabela:
 > ![image](https://user-images.githubusercontent.com/71721377/95111835-75aed880-0716-11eb-80bb-f90d9a348ce8.png)
 #### Objeto de configuração:
@@ -83,7 +93,12 @@ Sumario:
 > ![image](https://user-images.githubusercontent.com/71721377/95114618-9bd67780-071a-11eb-97ea-f0094b315075.png)
 ### Exemplo:
 > ![image](https://user-images.githubusercontent.com/71721377/95115066-4484d700-071b-11eb-97e4-be6121b6cff3.png)
+
+
+
 <div id='css'/>
+
+
 ## CSS personalizado:
 > ![image](https://user-images.githubusercontent.com/71721377/95111097-61b6a700-0715-11eb-9702-a7f17238b7fa.png)
 
@@ -101,7 +116,11 @@ Sumario:
 - textCancel: Texto no botão de Cancelar.
 ###### Exemplo;
 >![image](https://user-images.githubusercontent.com/71721377/95119886-11464600-0723-11eb-9629-4452b490f1bd.png)
+
+
 <div id='extras'/>
+
+
 ## Extras:
 - Desabilitando caixa de pesquisa:
 > Na tag HTML: `[searchBox]="'false'"`
