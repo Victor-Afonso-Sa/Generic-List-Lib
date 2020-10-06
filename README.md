@@ -1,6 +1,8 @@
 # Generic-List-Lib
 Biblioteca para criação de CRUD automatico usando angular.
+## [GitHub](https://github.com/RepositorioGenericofrwk/Generic-List-Lib)
 
+## [NPM](https://www.npmjs.com/package/generic-list)
 *******
 Sumario:
  1. [Iniciando](#inicio)
