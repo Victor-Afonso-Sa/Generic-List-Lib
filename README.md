@@ -16,6 +16,7 @@ Biblioteca para criação de CRUD automatico usando angular.
 >  ![image](https://user-images.githubusercontent.com/71721377/95256200-e29a9f00-07f8-11eb-9cd3-d4d83c2ac8d3.png) ( angular.json )
 > - ### ou
 >  ![image](https://user-images.githubusercontent.com/71721377/95256507-4ae98080-07f9-11eb-9168-b6788303fd6d.png) ( src/style.css ou outro )
+> - ##### https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 ## **E por ultimo puxar a modal do NGX bootstrap e o generic-list no modulo raiz do seu projeto**
 >![image](https://user-images.githubusercontent.com/71721377/95255017-2ab8c200-07f7-11eb-8b2f-025337968ce5.png)
 
