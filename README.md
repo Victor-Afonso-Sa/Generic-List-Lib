@@ -5,10 +5,10 @@ Biblioteca para criação de CRUD automatico usando angular.
 
 ## Iniciando:
 ### Importando via NPM:
-> ## npm i generic-list
+> ## `npm i generic-list` 
 > - https://www.npmjs.com/package/generic-list/
 ## Necessário instalar também bootstrap e NGX bootstrap para estilização basica:
-> ### npm i bootstrap
+> ### `npm i bootstrap`
 > - https://www.npmjs.com/package/bootstrap
 > ### npm i ngx-bootstrap
 > - https://www.npmjs.com/package/ngx-bootstrap
@@ -92,7 +92,7 @@ Biblioteca para criação de CRUD automatico usando angular.
 >![image](https://user-images.githubusercontent.com/71721377/95119886-11464600-0723-11eb-9629-4452b490f1bd.png)
 ## Extras:
 - Desabilitando caixa de pesquisa:
-> Na tag HTML: [searchBox]="'false'"
+> Na tag HTML: `[searchBox]="'false'"`
 - Passando parametro de pattern de DATA:
-> - **EXEMPLO:** [datePatern]="'dd/MM/yy'" (PIPE DATE angular) 
+> - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) 
 > - Apenas quando config do tipo for date
