@@ -1,7 +1,7 @@
 # Generic-List-Lib
 Biblioteca para criação de CRUD automatico usando angular.
 
-**Projeto para criação de Lista com angular automatizado a partir de um Objeto JSON.**
+**A partir de um Array de JSON.**
 
 ## Iniciando:
 ### Importando via NPM:
