@@ -28,8 +28,6 @@ Sumario:
 > ## `npm i ngx-bootstrap`
 > - https://www.npmjs.com/package/ngx-bootstrap
 ## Importar o CSS:
->  ![image](https://user-images.githubusercontent.com/71721377/95256200-e29a9f00-07f8-11eb-9cd3-d4d83c2ac8d3.png) ( angular.json )
-> - ### ou
 >  ![image](https://user-images.githubusercontent.com/71721377/95256507-4ae98080-07f9-11eb-9168-b6788303fd6d.png) ( src/style.css ou outro )
 > - ##### https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 ## **E por ultimo puxar a modal do NGX bootstrap e o generic-list no modulo raiz do seu projeto**
