@@ -125,7 +125,7 @@ Sumario:
 
 ## Extras:
 - Desabilitando caixa de pesquisa:
-> Na tag HTML: `[searchBox]="'false'"`
+> Na tag HTML: `[searchBox]="false"`
 - Passando parametro de pattern de DATA:
 > - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) 
 > - Apenas quando config do tipo for date
