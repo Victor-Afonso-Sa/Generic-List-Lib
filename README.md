@@ -129,3 +129,4 @@ Sumario:
 - Passando parametro de pattern de DATA:
 > - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) 
 > - Apenas quando config do tipo for date
+> - Alterando cor das letras da tabela: `[color]="'#80ff80'"`
