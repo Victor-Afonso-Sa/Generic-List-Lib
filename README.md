@@ -39,7 +39,7 @@ Sumario:
 
 ### Passando o Objeto para criação da Listagem:
 ### No HTML:
-> ![image](https://user-images.githubusercontent.com/71721377/95107337-28c80380-0710-11eb-962c-22a4cd8e5024.png)
+> ![image](https://user-images.githubusercontent.com/71721377/95365557-b3dc0180-08a8-11eb-806b-1b1724b241ac.png)
 
 ### No Componente:
 > ![image](https://user-images.githubusercontent.com/71721377/95107713-aab82c80-0710-11eb-98c0-d77686def608.png)
@@ -50,7 +50,7 @@ Sumario:
 
 ## Executando tarefas CRUD:
 ### No HTML basta passar nesses eventos sua logica de acordo com cada funcionalidade CRUD
-> ![image](https://user-images.githubusercontent.com/71721377/95108353-932d7380-0711-11eb-861f-47d4e9ffb39c.png)
+> ![image](https://user-images.githubusercontent.com/71721377/95365865-0c130380-08a9-11eb-9698-580856f762a5.png)
 
 ### No componente apenas para didatica um log no Objeto:
 > ![image](https://user-images.githubusercontent.com/71721377/95109176-9d9c3d00-0712-11eb-8cff-684e69d42d32.png)
@@ -82,7 +82,7 @@ Sumario:
 
 
 ## Configuração Formulario e tabela:
-> ![image](https://user-images.githubusercontent.com/71721377/95111835-75aed880-0716-11eb-80bb-f90d9a348ce8.png)
+> ![image](https://user-images.githubusercontent.com/71721377/95366085-54322600-08a9-11eb-9f27-ead38c28929b.png)
 #### Objeto de configuração:
 > ![image](https://user-images.githubusercontent.com/71721377/95119604-95e49480-0722-11eb-9a4e-18c9e3adb8ad.png)
 #### Cabeçalho:
@@ -102,7 +102,7 @@ Sumario:
 
 
 ## CSS personalizado:
-> ![image](https://user-images.githubusercontent.com/71721377/95111097-61b6a700-0715-11eb-9702-a7f17238b7fa.png)
+> ![image](https://user-images.githubusercontent.com/71721377/95366363-bc810780-08a9-11eb-88d6-e3e2866c158b.png)
 
 ##### classeTable: CSS da tabela.
 
