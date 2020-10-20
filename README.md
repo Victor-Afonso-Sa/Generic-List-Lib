@@ -97,8 +97,34 @@ Sumario:
 ### Exemplo:
 > ![image](https://user-images.githubusercontent.com/71721377/95115066-4484d700-071b-11eb-97e4-be6121b6cff3.png)
 #### Configuração extra campos a ser exibidos / disponivel a edição e  disponivel a criação:
-> - dentro do objeto config:
-> - ![image](https://user-images.githubusercontent.com/71721377/96643506-0a602b80-12fe-11eb-80b0-9eec842ea77c.png)
+- dentro do objeto config:
+>  ![image](https://user-images.githubusercontent.com/71721377/96643506-0a602b80-12fe-11eb-80b0-9eec842ea77c.png)
+### JSON:
+> `[
+  {
+     "id":1,
+     "name":"Jaleco",
+     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+     "price":"R$ 999,99",
+     "available":true,
+     "data": '2000-12-30'
+  },
+  {
+     "id":2,
+     "name":"Avental",
+     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+     "price":"R$ 999,99",
+     "available":true
+  }]`
+ ### Em exibição antes da configuração:
+ > ![image](https://user-images.githubusercontent.com/71721377/96644149-08e33300-12ff-11eb-96d3-addaca1d5497.png)
+ ### Em exibição após configuração:
+ > ![image](https://user-images.githubusercontent.com/71721377/96644236-22847a80-12ff-11eb-80da-bd1fc3a9ec24.png)
+ ### Formulario de edição:
+ > ![image](https://user-images.githubusercontent.com/71721377/96644289-34feb400-12ff-11eb-9ad0-99e7ab3b3cd2.png)
+ ### Formulario de criação:
+ > ![image](https://user-images.githubusercontent.com/71721377/96644396-62e3f880-12ff-11eb-841d-bbe7d05d4ae3.png)
+
 <div id='css'/>
 
 
@@ -119,27 +145,7 @@ Sumario:
 - textCancel: Texto no botão de Cancelar.
 ###### Exemplo;
 > ![image](https://user-images.githubusercontent.com/71721377/95119886-11464600-0723-11eb-9629-4452b490f1bd.png)
-### JSON:
-> `[
-  {
-     "id":1,
-     "name":"Jaleco",
-     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
-     "price":"R$ 999,99",
-     "available":true,
-     "data": '2000-12-30'
-  },
-  {
-     "id":2,
-     "name":"Avental",
-     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
-     "price":"R$ 999,99",
-     "available":true
-  }]`
-  
- ### Em exibição após configuração:
- ### Formulario de edição:
- ### Formulario de criação:
+
 
 <div id='extras'/>
 
