@@ -154,6 +154,7 @@ Sumario:
 - Desabilitando caixa de pesquisa:
 > Na tag HTML: `[searchBox]="false"`
 - Passando parametro de pattern de DATA:
-> - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) 
-> - Apenas quando config do tipo for date
-> - Alterando cor das letras da tabela: `[color]="'#80ff80'"`
+> - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) (Apenas quando config do tipo for date)
+- Desativando botão de exportar:
+> Na tag HTML: `[export]="false"`
+- Alterando cor das letras da tabela: `[color]="'#80ff80'"`
