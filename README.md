@@ -22,11 +22,14 @@ Sumario:
 ### Importando via NPM:
 > ## `npm i generic-list` 
 > - https://www.npmjs.com/package/generic-list/
-## Necessário instalar também bootstrap e NGX bootstrap para estilização basica:
+## Necessário instalar o bootstrap e NGX bootstrap para estilização basica e o jsPDF + o jsPDF-autotable:
 > ## `npm i bootstrap`
 > - https://www.npmjs.com/package/bootstrap
 > ## `npm i ngx-bootstrap`
 > - https://www.npmjs.com/package/ngx-bootstrap
+> ## `npm install jspdf jspdf-autotable --save`
+> - https://www.npmjs.com/package/jspdf-autotable
+> - https://www.npmjs.com/package/jspdf
 ## Importar o CSS:
 >  ![image](https://user-images.githubusercontent.com/71721377/95256507-4ae98080-07f9-11eb-9168-b6788303fd6d.png) ( src/style.css ou outro )
 > - ##### https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
@@ -93,9 +96,9 @@ Sumario:
 > ![image](https://user-images.githubusercontent.com/71721377/95114618-9bd67780-071a-11eb-97ea-f0094b315075.png)
 ### Exemplo:
 > ![image](https://user-images.githubusercontent.com/71721377/95115066-4484d700-071b-11eb-97e4-be6121b6cff3.png)
-
-
-
+#### Configuração extra campos a ser exibidos / disponivel a edição e  disponivel a criação:
+> - dentro do objeto config:
+> - ![image](https://user-images.githubusercontent.com/71721377/96643506-0a602b80-12fe-11eb-80b0-9eec842ea77c.png)
 <div id='css'/>
 
 
@@ -115,8 +118,28 @@ Sumario:
 - textConfirm: Texto no botão de confirmação.
 - textCancel: Texto no botão de Cancelar.
 ###### Exemplo;
->![image](https://user-images.githubusercontent.com/71721377/95119886-11464600-0723-11eb-9629-4452b490f1bd.png)
-
+> ![image](https://user-images.githubusercontent.com/71721377/95119886-11464600-0723-11eb-9629-4452b490f1bd.png)
+### JSON:
+> `[
+  {
+     "id":1,
+     "name":"Jaleco",
+     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+     "price":"R$ 999,99",
+     "available":true,
+     "data": '2000-12-30'
+  },
+  {
+     "id":2,
+     "name":"Avental",
+     "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+     "price":"R$ 999,99",
+     "available":true
+  }]`
+  
+ ### Em exibição após configuração:
+ ### Formulario de edição:
+ ### Formulario de criação:
 
 <div id='extras'/>
 
