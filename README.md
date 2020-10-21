@@ -157,4 +157,7 @@ Sumario:
 > - **EXEMPLO:** `[datePatern]="'dd/MM/yy'"` (PIPE DATE angular) (Apenas quando config do tipo for date)
 - Desativando botão de exportar:
 > Na tag HTML: `[export]="false"`
+- Alterando nome do arquivo exportado:
+> `[filename]="'nomeDoArquivo'"`
 - Alterando cor das letras da tabela: `[color]="'#80ff80'"`
+
