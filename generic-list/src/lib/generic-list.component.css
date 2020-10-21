@@ -1,4 +1,3 @@
-@import './styles/bootstrap-3.3.7-dist/css/bootstrap.min.css';
 .title{
   display: block;
     font-family: Poppins-Bold;
@@ -184,27 +183,6 @@
     bottom: -9999px;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
-  }
-  #suggested-searches {
-    overflow: visible;
-    border-radius: 0 0 10px 10px ;
-    margin-top: 2px;
-    background-color: aliceblue;
-    color: black;
-  }
-  #suggested-searches ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 5px;
-  }
-  #suggested-searches li {
-    padding: 3px;
-  }
-  #suggested-searches li:hover {
-    cursor: pointer;
-  }
-  #suggested-searches div:hover {
-    cursor: pointer;
   }
   .default table {
     width: 100%;

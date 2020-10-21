@@ -1,0 +1,23 @@
+.size{
+  font-size: 24px;
+}
+.size-label{
+  font-size: 16px;
+}
+
+.color-green{
+  color: green;
+}
+.color-red{
+  color: red;
+}
+.align-center{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

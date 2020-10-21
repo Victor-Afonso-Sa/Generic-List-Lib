@@ -1,13 +1,13 @@
 <div class="container-fluid {{ classeForm }}"  >
-  <button
+  <form #formulario="ngForm" (ngSubmit)=" edit ? onEdit(formulario) : onCreate(formulario)" *ngIf="refresh"  >
+    <button
     type="button"
     class="close pull-right pt-2"
     aria-label="Close"
-    (click)="onHide()"
+    (click)="onCancel(formulario)"
   >
-    <span class="" aria-hidden="true">&times;</span>
+  <span class="" aria-hidden="true">&times;</span>
 </button>
-  <form #formulario="ngForm" (ngSubmit)=" edit ? onEdit(formulario) : onCreate(formulario)" *ngIf="refresh"  >
     <div class="p-5">
       <div class="form-group" *ngFor="let control of controlador; index as j">
         <label for="{{ control }}">{{ label[control] ? label[control] : control}}:</label>

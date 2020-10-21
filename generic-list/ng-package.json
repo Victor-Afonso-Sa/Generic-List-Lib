@@ -9,6 +9,8 @@
     "ngx-bootstrap",
     "rxjs",
     "@angular/forms",
-    "@angular/common"
+    "@angular/common",
+    "jspdf",
+    "jspdf-autotable"
   ]
 }

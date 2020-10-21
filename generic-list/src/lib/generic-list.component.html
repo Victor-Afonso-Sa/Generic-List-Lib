@@ -1,8 +1,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 <div class="container table-responsive-xl overflow-auto scroll {{ classeTable }}">
   <button class="button-new draw meet col-md-12" (click)="onNew()">Novo</button>
-  <div id="suggested-searches" *ngIf="searchBox" >
-    <input autocomplete="off" [formControl]="queryField" name="query" id="query" class="form-control" type="text" placeholder="Procurar" aria-label="Search">
+  <div id="utilites" class="row justify-content-between">
+  <div id="suggested-searches" class="col-md-auto" *ngIf="searchBox" >
+    <input autocomplete="off" [formControl]="queryField" name="query" id="query" class="form-control " type="text" placeholder="Procurar" aria-label="Search">
+  </div>
+  <button *ngIf="export"  class="btn btn-info col-md-1 mr-3" (click)="exporModals()">Exportar</button>
 </div>
 <br>
 <table  *ngIf="exist ; else loading" [style.color]="color ? color : null " >
@@ -18,7 +21,8 @@
   </thead>
   <tbody  *ngIf="!(sugest.length > 0)" >
   <tr id="{{ i }}" *ngFor="let registro of registros ;index as i">
-      <td  *ngFor="let registerTitle of regTitles" >{{ tipos[registerTitle] == 'date' ? (registro[registerTitle] | date: datePatern ) : registro[registerTitle]  }}</td>
+      <td  *ngFor="let registerTitle of regTitles" >
+        {{ tipos[registerTitle] == 'date' ? (registro[registerTitle] | date: datePatern ) : tipos[registerTitle] == 'datetime-local' ? (registro[registerTitle] | date: datePatern ) : registro[registerTitle]}}</td>
        <div class="d-flex justify-content-end ">
       <td   (click)="onEdit(i)"><span class="material-icons icon icon-edit">edit</span></td>
        <td  (click)="onDelete(i)"><span class="material-icons icon icon-remove ">cancel</span></td>

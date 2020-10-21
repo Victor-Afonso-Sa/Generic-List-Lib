@@ -28,7 +28,7 @@ export class GenericFormComponent implements OnInit {
   ngOnInit(): void {
   }
   onCancel(formulario: FormGroup) {
-    formulario.reset(this.registrosCopy)
+    formulario.reset(this.registrosCopy);
     this.onHide();
   }
   onEdit(formulario) {

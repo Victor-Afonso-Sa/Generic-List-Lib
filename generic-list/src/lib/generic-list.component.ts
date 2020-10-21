@@ -34,7 +34,9 @@ export class GenericListComponent implements OnInit {
   @Input() color: string;
   @Input() classeForm: string;
   @Input() classeConfirmModal: object = null;
-  @Input() datePatern;
+  @Input() datePatern ;
+  @Input() filename = 'data' ;
+  @Input() export = true ;
   cabecalho: object = null;
   tipos: object = {};
   obrigatorio: any[];
@@ -55,14 +57,17 @@ export class GenericListComponent implements OnInit {
     if (this.config && this.config['tipos']) {
       this.tipos = this.config['tipos'];
     }
-    if (this.config && this.config['obrigatorio']) {
+    if (this.config && this.config['obrigatorio'].length > 0) {
       this.obrigatorio = this.config['obrigatorio'];
     }
-    if (this.config && this.config['readOnly']) {
+    if (this.config && this.config['readOnly'].length > 0) {
       this.readOnly = this.config['readOnly'];
     }
     this.refresh();
     this.onSearch();
+    if(this.config && this.config['exibirCampos'].length > 0){
+      this.regTitles = this.config['exibirCampos'];
+    }
   }
 
   refresh() {
@@ -108,11 +113,19 @@ export class GenericListComponent implements OnInit {
       );
   }
   onEdit(controle: string) {
+    let control;
+    if(this.config && this.config['editarCampos'].length > 0){
+      control = this.config['editarCampos'];
+    }else if (this.isKey) {
+      control = Object.keys(this.tableTitles);
+    } else {
+      control = Object.values(this.tableTitles);
+    }
     this.modalService.showForm(
       this.editar,
       this.tableTitles,
       true,
-      this.isKey,
+      control,
       this.tipos,
       this.obrigatorio,
       this.readOnly,
@@ -121,11 +134,19 @@ export class GenericListComponent implements OnInit {
     );
   }
   onNew() {
+    let control;
+    if(this.config && this.config['criarCampos'].length > 0){
+      control = this.config['criarCampos'];
+    }else if (this.isKey){
+      control = Object.keys(this.tableTitles);
+    } else {
+      control = Object.values(this.tableTitles);
+    }
     this.modalService.showForm(
       this.inserir,
       this.tableTitles,
       false,
-      this.isKey,
+      control,
       this.tipos,
       this.obrigatorio,
       this.readOnly,
@@ -177,5 +198,8 @@ export class GenericListComponent implements OnInit {
     const index = this.registros.indexOf(obj);
     this.registros.splice(index, 1);
     this.refresh();
+  }
+  exporModals(){
+    this.modalService.showExport(this.regTitles, this.tableTitles, this.registros,  this.filename);
   }
 }
