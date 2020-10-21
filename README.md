@@ -158,6 +158,6 @@ Sumario:
 - Desativando botão de exportar:
 > Na tag HTML: `[export]="false"`
 - Alterando nome do arquivo exportado:
-> `[filename]="'nomeDoArquivo'"`
+> Na tag HTML: `[filename]="'nomeDoArquivo'"`
 - Alterando cor das letras da tabela: `[color]="'#80ff80'"`
 
