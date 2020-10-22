@@ -31,17 +31,23 @@ Sumario:
 > - https://www.npmjs.com/package/jspdf-autotable
 > - https://www.npmjs.com/package/jspdf
 ## Importar o CSS:
->  ![image](https://user-images.githubusercontent.com/71721377/95256507-4ae98080-07f9-11eb-9168-b6788303fd6d.png) ( src/style.css ou outro )
+##  `@import '~bootstrap/dist/css/bootstrap.min.css';` ( Importando direto no src/style.css ou src/style.scss )
 > - ##### https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 ## **E por ultimo puxar a modal do NGX bootstrap e o generic-list no modulo raiz do seu projeto**
 >![image](https://user-images.githubusercontent.com/71721377/95255017-2ab8c200-07f7-11eb-8b2f-025337968ce5.png)
-
+> - `import { GenericListModule } from 'generic-list';` 
+> -  `import { ModalModule } from 'ngx-bootstrap/modal';`
+> - ` imports: [`
+> -   `GenericListModule,`
+> -   `ModalModule.forRoot()],`
 
 
 ### Passando o Objeto para criação da Listagem:
 ### No HTML:
 > ![image](https://user-images.githubusercontent.com/71721377/95365557-b3dc0180-08a8-11eb-806b-1b1724b241ac.png)
-
+> `<div *ngIf="registros" >
+> <generic-list [(registros)]="registros"> </generic-list>`
+> </div>
 ### No Componente:
 > ![image](https://user-images.githubusercontent.com/71721377/95107713-aab82c80-0710-11eb-98c0-d77686def608.png)
 ##### Passando o objeto desejado não importa tamanho numero de componentes so precisa ser um array de JSON
@@ -52,7 +58,9 @@ Sumario:
 ## Executando tarefas CRUD:
 ### No HTML basta passar nesses eventos sua logica de acordo com cada funcionalidade CRUD
 > ![image](https://user-images.githubusercontent.com/71721377/95365865-0c130380-08a9-11eb-9698-580856f762a5.png)
-
+- ` (inserir)="console($event[0])"`
+- ` (editar)="console($event[0])"`
+- ` (excluir)="console($event[0])"`
 ### No componente apenas para didatica um log no Objeto:
 > ![image](https://user-images.githubusercontent.com/71721377/95109176-9d9c3d00-0712-11eb-8cff-684e69d42d32.png)
 
@@ -84,8 +92,23 @@ Sumario:
 
 ## Configuração Formulario e tabela:
 > ![image](https://user-images.githubusercontent.com/71721377/95366085-54322600-08a9-11eb-9f27-ead38c28929b.png)
+> - `[config]="config"`
 #### Objeto de configuração:
 > ![image](https://user-images.githubusercontent.com/71721377/95119604-95e49480-0722-11eb-9a4e-18c9e3adb8ad.png)
+>
+> `config = {
+  cabecalho: {
+    id: 'Identificação',
+    name: 'nome'
+  },
+  obrigatorio: ['id', 'nome'],
+  readOnly: ['id'],
+  tipos: {
+    id: 'number',
+    sigla: 'text',
+    nome: 'text',
+    data: 'date'
+  }`
 #### Cabeçalho:
 > ![image](https://user-images.githubusercontent.com/71721377/95113771-54032080-0719-11eb-84a5-f65d29cfbbf9.png)
 ### Obrigatorio:
@@ -99,6 +122,10 @@ Sumario:
 #### Configuração extra campos a ser exibidos / disponivel a edição e  disponivel a criação:
 - dentro do objeto config:
 >  ![image](https://user-images.githubusercontent.com/71721377/96643506-0a602b80-12fe-11eb-80b0-9eec842ea77c.png)
+>
+> - `exibirCampos: ['id','name','price'],`
+> - `editarCampos:['name','price'],`
+> -`criarCampos:['price']`
 ### JSON:
 > `[
   {
