@@ -125,7 +125,7 @@ Sumario:
 >
 > - `exibirCampos: ['id','name','price'],`
 > - `editarCampos:['name','price'],`
-> -`criarCampos:['price']`
+> - `criarCampos:['price']`
 ### JSON:
 > `[
   {
