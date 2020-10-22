@@ -20,8 +20,10 @@ Sumario:
 
 ## Iniciando:
 ### Importando via NPM:
+
 > ## `npm i generic-list` 
 > - https://www.npmjs.com/package/generic-list/
+
 ## Necessário instalar o bootstrap e NGX bootstrap para estilização basica e o jsPDF + o jsPDF-autotable:
 > ## `npm i bootstrap`
 > - https://www.npmjs.com/package/bootstrap
@@ -35,6 +37,7 @@ Sumario:
 > - ##### https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 ## **E por ultimo puxar a modal do NGX bootstrap e o generic-list no modulo raiz do seu projeto**
 >![image](https://user-images.githubusercontent.com/71721377/95255017-2ab8c200-07f7-11eb-8b2f-025337968ce5.png)
+
 > - `import { GenericListModule } from 'generic-list';` 
 > -  `import { ModalModule } from 'ngx-bootstrap/modal';`
 > - ` imports: [`
@@ -127,7 +130,8 @@ Sumario:
 > - `editarCampos:['name','price'],`
 > - `criarCampos:['price']`
 ### JSON:
-> `[
+ ````
+[
   {
      "id":1,
      "name":"Jaleco",
@@ -142,7 +146,8 @@ Sumario:
      "description":"Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
      "price":"R$ 999,99",
      "available":true
-  }]`
+  }]
+  ````
  ### Em exibição antes da configuração:
  > ![image](https://user-images.githubusercontent.com/71721377/96644149-08e33300-12ff-11eb-96d3-addaca1d5497.png)
  ### Em exibição após configuração:
